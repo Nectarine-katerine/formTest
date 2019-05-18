@@ -1,11 +1,8 @@
-.logo {
-  background-color: #fff;
-  width: 140px;
-  height: 16px;
-}
 .enter {
   border: 1px solid #D8E1E6;
   border-radius: 4px;
+  display: flex;
+  padding: 8px 17px;
 }
 .enter__button {
   display: block;
@@ -14,4 +11,11 @@
   font-family: 'Open Sans', sans-serif;
   border: none;
   font-size: 16px;
+}
+
+.enter__icon {
+  background: url('../../img/user.svg') center center no-repeat;
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
 }

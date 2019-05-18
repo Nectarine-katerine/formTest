@@ -1,5 +1,10 @@
 .header {
-  padding: 28px 0;
+  padding: 28px 0 14px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @include tablets {
+    padding: 1.5rem 0 0.9rem;
+  }
 }

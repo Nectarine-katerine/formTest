@@ -14,9 +14,7 @@
       <header class="header">
        <div class="logo"></div>
        <div class="enter">
-          <!-- <svg class="enter__icon">
-            <use xlink:href="./img/user.svg#ic"></use>
-          </svg> -->
+         <div class="enter__icon"></div>
          <button class="enter__button" type="button">Войти</button>
        </div> 
       </header>
@@ -30,35 +28,36 @@
             <p class="content__text">Достаточно депозита в $10, чтобы начать торговать</p>
           </li>
         </ul>
-        <form action="" class="form" id="contactForm">
+        <form action="#" class="form">
           <div class="form__row">
             <label for="email" class="email-label">Ваш e-mail</label>
-            <input type="email" id='email', name='email', placeholder="samplemail@mail.com" class="form__input email">
+            <input type="email" id='email', name='email', placeholder="samplemail@mail.com" class="form__input email" required>
           </div>
-          <div class="form__row">
-            <label for="password"></label>
-            <input type="password" id='password', name='password', placeholder="Придумайте пароль" class="form__input password">
+          <div class="form__row form__row_flex">
+            <input type="password" id='password', name='password', placeholder="Придумайте пароль" class="form__input password" required minlength="4">
+            <!-- <div class="form__error"></div> -->
           </div>
+          
           <div class="form__row form__row_controlls controlls">
             <div class="controlls__text">Валюта для ввода и вывода средств</div>
             <div class="controlls__btns">
               <label class="radio">
-                <input type="radio" name="currency" class="radio__input">
+                <input type="radio" name="currency"  value="rubles" class="radio__input" checked>
                 <div class="radio-fake radio-fake_border-left">P</div>
               </label>
               <label class="radio">
-                <input type="radio" name="currency" class="radio__input">
+                <input type="radio" name="currency" value="dollar" class="radio__input">
                 <div class="radio-fake">S</div>
               </label>
               <label class="radio">
-                <input type="radio" name="currency" class="radio__input">
+                <input type="radio" name="currency" value="euro" class="radio__input">
                 <div class="radio-fake radio-fake_no-after radio-fake_border-right">E</div>
               </label>
             </div>
           </div>
           <div class="form__row form__row_controlls">
             <label class="form__checkbox">
-              <input type="checkbox" name="policy" class="form__check">
+              <input type="checkbox" name="agreement" id="agreement" class="form__check">
               <div class="form__checkbox_fake"></div>
               <div class="form__checkbox-title">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</div>
             </label>
@@ -74,5 +73,6 @@
       </div>
     </div>
   </div>
+  <script> src="./scripts/focus.js"</script>
 </body>
 </html>

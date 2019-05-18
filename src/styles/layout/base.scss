@@ -7,6 +7,19 @@
 html,
 body {
   height: 100%;
+  font-size: 16px;
+
+  @include laptop {
+    font-size: 15px;
+  }
+
+  @include tablets {
+    font-size: 14px;
+  }
+
+  @include phones {
+    font-size: 13px;
+  }
 }
 // html {
 //   @include tablets {
@@ -21,7 +34,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   line-height: 1.42;
-  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

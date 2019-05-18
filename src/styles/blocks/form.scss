@@ -1,8 +1,9 @@
 .form {
-  width: 90%;
+  width: 95%;
 }
 
 .form__row {
+  position: relative;
   display: flex;
   flex-direction: column;
   border: 1px solid transparent;
@@ -12,6 +13,14 @@
   margin-bottom: 16px;
   color: #7A8F99;
   transition: border-color 0.3s;
+  cursor: pointer;
+  height: 64px;
+}
+
+.form__row_flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .form__row:focus-within {
@@ -32,8 +41,11 @@
   flex-direction: row;
   border: transparent;
   background: transparent;
-  padding: 12px 0;
+  height: 32px;
+  padding: 0;
+  margin-bottom: 24px;
 }
+
 .controls__text {
   font-size: 12px;
   width: 34%;
@@ -50,7 +62,7 @@
 .form__checkbox_fake {
   background: rgba( #F5F8FA, 0.1);
   border-radius: 4px;
-  width: 32px;
+  width: 37px;
   height: 32px;
   margin-right: 16px;
   position: relative;
@@ -62,6 +74,9 @@
 
 .form__row_button {
   background: #1C945D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .checkin {
@@ -77,4 +92,58 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: .3s;
+}
+
+.form__input:focus::placeholder {
+  color: transparent;
+  transition: color 0.3s;
+}
+
+.form__input:-webkit-autofill,
+.form__input:-webkit-autofill:hover, 
+.form__input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  background-color: transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form__error{
+  position: absolute;
+  left: 11%;
+  top: -56%;
+  padding: 13px 20px;
+  background-color: #E15433;
+  z-index: 1;
+  color: #ffffff;
+  animation: slide-up 0.4s ease;
+  animation-direction: reverse;
+  border-radius: 4px;
+
+  &::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    
+    border-top: 5px solid #E15433;    
+  }
+}
+
+
+@keyframes slide-up {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.form__row_error {
+  border-color: #E15433;
 }
