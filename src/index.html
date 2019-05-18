@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="maincontent">
+    <div class="container">
+      <header class="header">
+       <div class="logo"></div>
+       <div class="enter">
+          <!-- <svg class="enter__icon">
+            <use xlink:href="./img/user.svg#ic"></use>
+          </svg> -->
+         <button class="enter__button" type="button">Войти</button>
+       </div> 
+      </header>
+      <main class="content">
+        <h1 class="content__title">Начните торговать  прямо сейчас</h1>
+        <ul class="content__list">
+          <li class="content__item">
+            <p class="content__text">Нет спреда — торгуйте с прозрачными и точными котировками</p>
+          </li>
+          <li class="content__item">
+            <p class="content__text">Достаточно депозита в $10, чтобы начать торговать</p>
+          </li>
+        </ul>
+        <form action="" class="form" id="contactForm">
+          <div class="form__row">
+            <label for="email" class="email-label">Ваш e-mail</label>
+            <input type="email" id='email', name='email', placeholder="samplemail@mail.com" class="form__input email">
+          </div>
+          <div class="form__row">
+            <label for="password"></label>
+            <input type="password" id='password', name='password', placeholder="Придумайте пароль" class="form__input password">
+          </div>
+          <div class="form__row form__row_controlls controlls">
+            <div class="controlls__text">Валюта для ввода и вывода средств</div>
+            <div class="controlls__btns">
+              <label class="radio">
+                <input type="radio" name="currency" class="radio__input">
+                <div class="radio-fake radio-fake_border-left">P</div>
+              </label>
+              <label class="radio">
+                <input type="radio" name="currency" class="radio__input">
+                <div class="radio-fake">S</div>
+              </label>
+              <label class="radio">
+                <input type="radio" name="currency" class="radio__input">
+                <div class="radio-fake radio-fake_no-after radio-fake_border-right">E</div>
+              </label>
+            </div>
+          </div>
+          <div class="form__row form__row_controlls">
+            <label class="form__checkbox">
+              <input type="checkbox" name="policy" class="form__check">
+              <div class="form__checkbox_fake"></div>
+              <div class="form__checkbox-title">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</div>
+            </label>
+          </div>
+          <div class="form__row form__row_button">
+            <button class="checkin" type="submit">Зарегистрироваться</button>
+          </div>
+        </form>
+      </main>
+      <div class="images">
+        <img src="./img/dark.png" alt="" class="images__laptop">
+        <img src="./img/frontal-black.png" alt="" class="images__phone">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
