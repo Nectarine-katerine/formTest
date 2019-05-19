@@ -62,6 +62,10 @@
               <div class="form__checkbox-title">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</div>
             </label>
           </div>
+          <div class="email__error">
+            <img src="./img/attention.png" alt="" class="email__error-img">
+            <p class="email__error-text">Учётная запись с указанным e-mail уже существует</p>
+          </div>
           <div class="form__row form__row_button">
             <button class="checkin" type="submit">Зарегистрироваться</button>
           </div>
@@ -76,7 +80,8 @@
   <script>
     const form = document.querySelector('#myForm');
     const sendBtn = document.querySelector('.checkin');
-
+    const emails = ['ivanov@mail.ru', 'petrov@yandex.ru', 'zuev@inbox.ru'];
+    const emailError = document.querySelector('.email__error');
 
     form.addEventListener('submit', e => {
       e.preventDefault();
@@ -84,17 +89,25 @@
     const password = form.elements.password;
     const email = form.elements.email;
     const agreement = form.elements.agreement;
-
+    
       if(password.value === '') {
         addFormMessage(password, 'Поле не может быть пустым')
       } else if (password.value.length<4) {
         addFormMessage(password, 'Пароль должен быть не менее 4 символов');
       }
+
       if(email.value === '') {
         addFormMessage(email, 'Поле не может быть пустым')
       } else if(!validateEmail(email.value)) {
         addFormMessage(email, 'Не корректный почтовый адрес')
+      } 
+
+      for(var i=0; i<emails.length; i++ ){
+        if(email.value === emails[i]) {
+        emailError.style.display='flex';
+        }
       }
+      
       if(!agreement.checked) {
         addFormMessage(agreement, 'Требуется подтверждение')
       }

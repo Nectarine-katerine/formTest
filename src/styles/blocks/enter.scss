@@ -2,7 +2,7 @@
   border: 1px solid #D8E1E6;
   border-radius: 4px;
   display: flex;
-  padding: 8px 17px;
+  padding: 0.5rem 1rem;
 }
 .enter__button {
   display: block;
@@ -10,12 +10,12 @@
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .enter__icon {
   background: url('../../img/user.svg') center center no-repeat;
-  height: 24px;
-  width: 24px;
-  margin-right: 10px;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.625rem;
 }

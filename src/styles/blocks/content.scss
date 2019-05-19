@@ -1,5 +1,5 @@
 .content {
-  width: 45%;
+  width: 40%;
 
   @include laptop {
     width: 70%;
@@ -16,28 +16,43 @@
 
 .content__title {
   font-family: 'Open Sans', sans-serif;
-  font-size: 36px;
-  margin-bottom: 22px;
+  font-size: 2.25rem;
+  margin-bottom: 1.375rem;
   line-height: 1.4em;
+
+  @include phones {
+    font-size: 1.9rem;
+  }
 }
 
 .content__item {
   color: #7A8F99;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   
   &:last-child {
-    margin-bottom: 49px;
+    margin-bottom: 3.0625rem;
+  }
+
+  @include phones {
+ 
+    &:last-child {
+      margin-bottom: 1.8rem;
+    }
   }
 }
 .content__text {
-  padding-left: 40px;
+  padding-left: 2.5rem;
   position: relative;
+
+  @include phones {
+    font-size: 0.9rem;
+  }
 }
 .content__text::before {
   content: "";
   background: url("../../img/check.png") center center no-repeat;
-  width: 18px;
-  height: 14px;
+  width: 1.125rem;
+  height: 0.875rem;
   position: absolute;
   top: 6%;
   left: 0;

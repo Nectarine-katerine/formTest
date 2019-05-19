@@ -341,7 +341,6 @@ body {
   background-color: #031025;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   position: relative; }
 
 .container {
@@ -384,7 +383,7 @@ input {
   background: transparent; }
 
 .content {
-  width: 45%; }
+  width: 40%; }
   @media screen and (max-width: 1124px) {
     .content {
       width: 70%; } }
@@ -397,32 +396,44 @@ input {
 
 .content__title {
   font-family: 'Open Sans', sans-serif;
-  font-size: 36px;
-  margin-bottom: 22px;
+  font-size: 2.25rem;
+  margin-bottom: 1.375rem;
   line-height: 1.4em; }
+  @media screen and (max-width: 480px) {
+    .content__title {
+      font-size: 1.9rem; } }
 
 .content__item {
   color: #7A8F99;
-  margin-bottom: 20px; }
+  margin-bottom: 1.25rem; }
   .content__item:last-child {
-    margin-bottom: 49px; }
+    margin-bottom: 3.0625rem; }
+  @media screen and (max-width: 480px) {
+    .content__item:last-child {
+      margin-bottom: 1.8rem; } }
 
 .content__text {
-  padding-left: 40px;
+  padding-left: 2.5rem;
   position: relative; }
+  @media screen and (max-width: 480px) {
+    .content__text {
+      font-size: 0.9rem; } }
 
 .content__text::before {
   content: "";
   background: url("../../img/check.png") center center no-repeat;
-  width: 18px;
-  height: 14px;
+  width: 1.125rem;
+  height: 0.875rem;
   position: absolute;
   top: 6%;
   left: 0; }
 
 .controlls__text {
-  font-size: 12px;
+  font-size: 0.75rem;
   width: 41%; }
+  @media screen and (max-width: 480px) {
+    .controlls__text {
+      width: 50%; } }
 
 .controlls__btns {
   display: -webkit-box;
@@ -431,8 +442,8 @@ input {
   width: 85%; }
 
 .email-label {
-  font-size: 12px;
-  margin-bottom: 4px; }
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem; }
 
 .email::-webkit-input-placeholder {
   color: #fff; }
@@ -449,13 +460,35 @@ input {
 .email::placeholder {
   color: #fff; }
 
+.email__error {
+  background-color: #E15433;
+  position: relative;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 1rem;
+  color: #7A8F99;
+  height: 4rem;
+  color: #fff;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.email__error-text {
+  padding-left: 20px; }
+
+.email__error-img {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem; }
+
 .enter {
   border: 1px solid #D8E1E6;
   border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 8px 17px; }
+  padding: 0.5rem 1rem; }
 
 .enter__button {
   display: block;
@@ -463,13 +496,13 @@ input {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   border: none;
-  font-size: 16px; }
+  font-size: 1rem; }
 
 .enter__icon {
   background: url("../../img/user.svg") center center no-repeat;
-  height: 24px;
-  width: 24px;
-  margin-right: 10px; }
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.625rem; }
 
 .form {
   width: 95%; }
@@ -486,13 +519,13 @@ input {
   border: 1px solid transparent;
   border-radius: 4px;
   background-color: #1b293c;
-  padding: 12px 24px;
-  margin-bottom: 16px;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 1rem;
   color: #7A8F99;
   -webkit-transition: border-color 0.3s;
   transition: border-color 0.3s;
   cursor: pointer;
-  height: 64px; }
+  height: 4rem; }
 
 .form__row_flex {
   display: -webkit-box;
@@ -511,7 +544,8 @@ input {
   transition: border-color 0.3s; }
 
 .form__input {
-  outline: none; }
+  outline: none;
+  color: #fff; }
 
 .form__controlls {
   display: block;
@@ -524,12 +558,12 @@ input {
   flex-direction: row;
   border: transparent;
   background: transparent;
-  height: 32px;
+  height: 2rem;
   padding: 0;
-  margin-bottom: 24px; }
+  margin-bottom: 1.5rem; }
 
 .controls__text {
-  font-size: 12px;
+  font-size: 0.75rem;
   width: 34%; }
 
 .form__checkbox {
@@ -543,13 +577,16 @@ input {
 .form__checkbox_fake {
   background: rgba(245, 248, 250, 0.1);
   border-radius: 4px;
-  width: 37px;
-  height: 32px;
-  margin-right: 16px;
+  width: 2.3125rem;
+  height: 2rem;
+  margin-right: 1rem;
   position: relative; }
 
 .form__checkbox-title {
-  font-size: 12px; }
+  font-size: 0.75rem; }
+  @media screen and (max-width: 480px) {
+    .form__checkbox-title {
+      width: 90%; } }
 
 .form__row_button {
   background: #1C945D;
@@ -571,6 +608,7 @@ input {
   content: '\2714';
   color: #1C945D;
   position: absolute;
+  font-size: 2rem;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -615,7 +653,7 @@ input {
   position: absolute;
   left: 11%;
   top: -88%;
-  padding: 13px 20px;
+  padding: 0.8125rem 1.25rem;
   background-color: #E15433;
   z-index: 1;
   color: #ffffff;
@@ -652,7 +690,7 @@ input {
   border-color: #E15433; }
 
 .header {
-  padding: 28px 0 14px;
+  padding: 1.75rem 0 0.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,55 +706,60 @@ input {
 
 .images {
   position: absolute;
-  bottom: 0;
   right: 0;
-  width: 50%;
-  height: 100%; }
-  @media screen and (max-width: 480px) {
+  top: 6%;
+  left: 37%;
+  bottom: 0; }
+  @media screen and (max-width: 1800px) {
+    .images {
+      top: 12%; } }
+  @media screen and (max-width: 768px) {
     .images {
       display: none; } }
 
 .images__laptop {
   position: absolute;
-  bottom: 0;
-  right: 0; }
-  @media screen and (max-width: 1124px) {
+  right: 0;
+  top: 0; }
+  @media screen and (max-width: 1800px) {
     .images__laptop {
-      display: none; } }
+      bottom: 0; } }
 
 .images__phone {
   position: absolute;
-  bottom: 0;
   width: 15rem;
-  height: 30rem; }
-  @media screen and (max-width: 1124px) {
+  height: 30rem;
+  top: 10%;
+  left: 50%; }
+  @media screen and (max-width: 1800px) {
     .images__phone {
-      right: 0; } }
+      left: 10%;
+      top: 20%; } }
 
 .logo {
   background-color: #fff;
-  width: 140px;
-  height: 16px; }
+  width: 8.75rem;
+  height: 1rem; }
 
 .password::-webkit-input-placeholder {
   color: #7A8F99;
-  font-size: 16px; }
+  font-size: 1rem; }
 
 .password::-moz-placeholder {
   color: #7A8F99;
-  font-size: 16px; }
+  font-size: 1rem; }
 
 .password:-ms-input-placeholder {
   color: #7A8F99;
-  font-size: 16px; }
+  font-size: 1rem; }
 
 .password::-ms-input-placeholder {
   color: #7A8F99;
-  font-size: 16px; }
+  font-size: 1rem; }
 
 .password::placeholder {
   color: #7A8F99;
-  font-size: 16px; }
+  font-size: 1rem; }
 
 .password {
   color: #fff; }
@@ -753,7 +796,7 @@ input {
   position: absolute;
   right: 0;
   color: #1a283c;
-  font-size: 20px; }
+  font-size: 1.25rem; }
 
 .radio-fake_no-after:after {
   display: none; }

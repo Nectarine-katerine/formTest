@@ -1,32 +1,38 @@
 .images {
   position: absolute;
-  bottom: 0;
   right: 0;
-  width: 50%;
-  height: 100%;
+  top: 6%;
+  left: 37%;
+  bottom: 0;
 
-  @include phones {
+  @include desktop {
+    top: 12%;
+  }
+
+  @include tablets {
     display: none;
   }
 }
 
 .images__laptop {
   position: absolute;
-  bottom: 0;
   right: 0;
+  top: 0;
 
-  @include laptop {
-    display: none;
+  @include desktop {
+    bottom: 0;
   }
 }
 
 .images__phone {
   position: absolute;
-  bottom: 0;
   width: 15rem;
   height: 30rem;
+  top: 10%;
+  left: 50%;
 
-  @include laptop {
-    right: 0;
+  @include desktop {
+    left: 10%;
+    top: 20%;
   }
 }
