@@ -1,5 +1,4 @@
-# [form test](https://nectarine-katerine.github.io/formTest/ "form test link")
-
+# [form test](https://nectarine-katerine.github.io/formTest/)
 
 > Перед установкой зависимостей и запуском проекта убедитесь, что у вас установлена [последняя версия Node.js & NPM](https://nodejs.org/en/download/current/).
 
@@ -25,7 +24,6 @@ $ npm run имя_скрипта
 ## Основные разделы
 * _**dist**_ - готовый билд проекта (продакшн).
 * _**src**_ - разработка.
-* _**docs**_ - билд проекта для показа на GitHub.
 
 ## Copyright
 
