@@ -317,7 +317,7 @@ html,
 body {
   height: 100%;
   font-size: 16px; }
-  @media screen and (max-width: 924px) {
+  @media screen and (max-width: 1124px) {
     html,
     body {
       font-size: 15px; } }
@@ -340,7 +340,9 @@ body {
 .maincontent {
   background-color: #031025;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
 
 .container {
   margin: 0 auto;
@@ -377,13 +379,21 @@ button {
 img {
   max-width: 100%; }
 
-.content {
-  width: 38%;
-  font-family: -apple-system,system-ui, BlinkMacSystemFont,"Segoe UI", "Roboto", "Helvetica"; }
-
 input {
   border: none;
   background: transparent; }
+
+.content {
+  width: 45%; }
+  @media screen and (max-width: 1124px) {
+    .content {
+      width: 70%; } }
+  @media screen and (max-width: 768px) {
+    .content {
+      width: 75%; } }
+  @media screen and (max-width: 480px) {
+    .content {
+      width: 100%; } }
 
 .content__title {
   font-family: 'Open Sans', sans-serif;
@@ -604,7 +614,7 @@ input {
 .form__error {
   position: absolute;
   left: 11%;
-  top: -56%;
+  top: -88%;
   padding: 13px 20px;
   background-color: #E15433;
   z-index: 1;
@@ -658,22 +668,30 @@ input {
 
 .images {
   position: absolute;
+  bottom: 0;
   right: 0;
-  top: 5%;
-  left: 37%;
-  bottom: 0; }
+  width: 50%;
+  height: 100%; }
+  @media screen and (max-width: 480px) {
+    .images {
+      display: none; } }
 
 .images__laptop {
   position: absolute;
-  right: 0;
-  bottom: 0; }
+  bottom: 0;
+  right: 0; }
+  @media screen and (max-width: 1124px) {
+    .images__laptop {
+      display: none; } }
 
 .images__phone {
   position: absolute;
-  width: 245px;
-  height: 482px;
   bottom: 0;
-  left: 94px; }
+  width: 15rem;
+  height: 30rem; }
+  @media screen and (max-width: 1124px) {
+    .images__phone {
+      right: 0; } }
 
 .logo {
   background-color: #fff;

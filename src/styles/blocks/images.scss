@@ -1,21 +1,32 @@
 .images {
   position: absolute;
-  right: 0;
-  top: 5%;
-  left: 37%;
   bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+
+  @include phones {
+    display: none;
+  }
 }
 
 .images__laptop {
   position: absolute;
-  right: 0;
   bottom: 0;
+  right: 0;
+
+  @include laptop {
+    display: none;
+  }
 }
 
 .images__phone {
   position: absolute;
-  width: 245px;
-  height: 482px;
   bottom: 0;
-  left: 94px;
+  width: 15rem;
+  height: 30rem;
+
+  @include laptop {
+    right: 0;
+  }
 }

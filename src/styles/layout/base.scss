@@ -42,6 +42,8 @@ body {
   background-color: #031025;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .container {
@@ -81,10 +83,6 @@ img {
   max-width: 100%;
 }
 
-.content {
-  width: 38%;
-  font-family: -apple-system,system-ui, BlinkMacSystemFont,"Segoe UI", "Roboto", "Helvetica";
-}
 input {
   border: none;
   background: transparent;
