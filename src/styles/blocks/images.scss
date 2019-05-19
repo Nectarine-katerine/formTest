@@ -1,12 +1,17 @@
 .images {
   position: absolute;
   right: 0;
-  top: 6%;
-  left: 37%;
-  bottom: 0;
+  top: 25%;
+  left: 59%;
+  height: 100%;
 
   @include desktop {
-    top: 12%;
+    top: 0;
+    left: 50%;
+  }
+
+  @include laptop {
+    left: 55%;
   }
 
   @include tablets {
@@ -18,9 +23,13 @@
   position: absolute;
   right: 0;
   top: 0;
+  width: 59rem;
+  height: 34rem;
 
   @include desktop {
+    top: initial;
     bottom: 0;
+    height: 38rem;
   }
 }
 
@@ -29,10 +38,11 @@
   width: 15rem;
   height: 30rem;
   top: 10%;
-  left: 50%;
+  left: 0%;
 
   @include desktop {
-    left: 10%;
-    top: 20%;
+    bottom: 0;
+    left: -5%;
+    top: initial;
   }
 }

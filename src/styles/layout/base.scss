@@ -6,8 +6,13 @@
 
 html,
 body {
+  width: 100%;
   height: 100%;
-  font-size: 16px;
+  font-size: 18px;
+
+  @include desktop{
+    font-size: 16px;
+  }
 
   @include laptop {
     font-size: 15px;
@@ -21,15 +26,7 @@ body {
     font-size: 13px;
   }
 }
-// html {
-//   @include tablets {
-//     font-size: 0.9375rem;
-//   }
 
-//   @include phones {
-//     font-size: 0.8125rem;
-//   }
-// }
 body {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
@@ -42,6 +39,7 @@ body {
   background-color: #031025;
   width: 100%;
   height: 100%;
+  min-height: 700px;
   // overflow: hidden;
   position: relative;
 }

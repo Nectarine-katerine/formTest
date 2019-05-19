@@ -1,6 +1,11 @@
 .controlls__text {
-  font-size: 0.75rem;
-  width: 41%;
+  width: 33%;
+
+  @include desktop {
+    font-size: 0.75rem;
+    width: 41%;
+  }
+
 
   @include phones {
     width: 50%;

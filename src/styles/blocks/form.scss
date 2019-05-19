@@ -1,20 +1,31 @@
 .form {
-  width: 95%;
+  width: 90%;
+
+  @include desktop {
+    width: 95%;  
+  }
 }
 
 .form__row {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border: 1px solid transparent;
   border-radius: 4px;
   background-color: #1b293c;
-  padding: 0.75rem 1.5rem;
-  margin-bottom: 1rem;
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
   color: #7A8F99;
   transition: border-color 0.3s;
   cursor: pointer;
-  height: 4rem;
+  height: 5rem;
+
+  @include desktop {
+    height: 4rem;
+    padding: 0.75rem 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .form__row_flex {
@@ -40,16 +51,17 @@
 
 .form__row_controlls {
   flex-direction: row;
+  justify-content: flex-start;
   border: transparent;
   background: transparent;
-  height: 2rem;
+  height: 2.5rem;
   padding: 0;
-  margin-bottom: 1.5rem;
-}
+  margin-bottom: 2rem;
 
-.controls__text {
-  font-size: 0.75rem;
-  width: 34%;
+  @include desktop {
+    height: 2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .form__checkbox {
@@ -65,12 +77,18 @@
   border-radius: 4px;
   width: 2.3125rem;
   height: 2rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
   position: relative;
+
+  @include desktop {
+    margin-right: 1rem;
+  }
 }
 
 .form__checkbox-title {
-  font-size: 0.75rem;
+  @include desktop {
+    font-size: 0.75rem;
+  }
 
   @include phones {
     width: 90%;
@@ -116,7 +134,7 @@
 .form__error{
   position: absolute;
   left: 11%;
-  top: -88%;
+  top: -67%;
   padding: 0.8125rem 1.25rem;
   background-color: #E15433;
   z-index: 1;
@@ -137,6 +155,10 @@
     border-right: 6px solid transparent;
     
     border-top: 5px solid #E15433;    
+  }
+
+  @include desktop {
+    top: -88%;
   }
 }
 
