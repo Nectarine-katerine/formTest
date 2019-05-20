@@ -5,7 +5,7 @@
 ##  Чтобы развернуть проект необходимо:
 ```sh
 $ git clone git@github.com:Nectarine-katerine/formTest.git
-$ cd portfolio
+$ cd formTest
 $ npm install
 ```
 
@@ -24,6 +24,7 @@ $ npm run имя_скрипта
 ## Основные разделы
 * _**dist**_ - готовый билд проекта (продакшн).
 * _**src**_ - разработка.
+* _**docs**_ - готовый проект (сборка gulp) для показа на GitHub.
 
 ## Copyright
 
