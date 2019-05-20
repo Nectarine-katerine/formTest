@@ -28,11 +28,16 @@
 
   @include desktop {
     top: initial;
-    bottom: 0;
+    bottom: 10%;
+    height: 38rem;
+  }
+
+  @include laptop {
+    top: initial;
+    bottom: 5%;
     height: 38rem;
   }
 }
-
 .images__phone {
   position: absolute;
   width: 15rem;
@@ -41,7 +46,13 @@
   left: 0%;
 
   @include desktop {
-    bottom: 0;
+    bottom: 10%;
+    left: -5%;
+    top: initial;
+  }
+
+  @include laptop {
+    bottom: 5%;
     left: -5%;
     top: initial;
   }

@@ -44,6 +44,10 @@ form.addEventListener('submit', e => {
     }
 
     elem.classList.remove('form__row_error');
+
+    if(emailError) {
+      emailError.style.display='none';
+    }
   });
   
   agreement.addEventListener('change', e => {
