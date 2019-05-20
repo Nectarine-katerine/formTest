@@ -1,0 +1,10 @@
+// resolutions
+$desktop: 1800px;
+$laptop: 1124px;
+$tablets: 768px;
+$phones: 480px;
+
+
+@import './layout/media.scss';
+@import './layout/base.scss';
+@import "./blocks/*.scss";

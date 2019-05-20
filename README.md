@@ -4,9 +4,8 @@
 
 ##  Чтобы развернуть проект необходимо:
 ```sh
-$ перейти в ветку finish на GitHub
-$ скачать архив проекта (clone or download)
-$ открыть папку с проектом
+$ git clone git@github.com:Nectarine-katerine/formTest.git
+$ cd portfolio
 $ npm install
 ```
 
@@ -25,8 +24,6 @@ $ npm run имя_скрипта
 ## Основные разделы
 * _**dist**_ - готовый билд проекта (продакшн).
 * _**src**_ - разработка.
-
-В ветке master находится сборка проекта gulp для показа на GitHub.
 
 ## Copyright
 
