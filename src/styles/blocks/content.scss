@@ -1,11 +1,15 @@
 .content {
   width: 39%;
 
-  // @include laptop {
-  //   width: 50%;
-  // }
+  @include laptop {
+    width: 58%;
+  }
 
   @include tablets {
+    width: 54%;
+  }
+
+  @include phones {
     width: 100%;
   }
 }
@@ -39,18 +43,15 @@
     line-height: 1.42em;
   }
 
-
-  @include phones {
-    &:last-child {
-      margin-bottom: 1.8rem;
-    }
-  }
-
   &:last-child {
     margin-bottom: 5.5rem;
 
     @include desktop {
       margin-bottom: 3rem;
+    }
+
+    @include laptop {
+      margin-bottom: 1.5rem;
     }
   }
 }

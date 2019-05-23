@@ -9,7 +9,7 @@ form.addEventListener('submit', e => {
   const password = form.elements.password;
   const email = form.elements.email;
   const agreement = form.elements.agreement;
-
+  
   if(password.value === '') {
     addFormMessage(password, 'Поле не может быть пустым')
   } else if (password.value.length<4) {
@@ -31,6 +31,7 @@ form.addEventListener('submit', e => {
   if(!agreement.checked) {
     addFormMessage(agreement, 'Требуется подтверждение')
   }
+
 });
 
 // при фокусе на инпут убираем класс ошибки
@@ -56,6 +57,7 @@ form.addEventListener('submit', e => {
 
     elem.classList.remove('form__row_error');
   });
+
 });
 
 // добавляем (создаем) блок-сообщение об ошибке

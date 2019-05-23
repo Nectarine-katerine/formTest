@@ -193,14 +193,14 @@
   @include desktop {
     left: 18%;
     top: -88%;
-    padding: 0.58rem 4rem;
+    padding: 0.58rem 2.95rem;
     font-size: 1rem;
   }
 
   &::after{
     content: "";
     position: absolute;
-    top: 99%;
+    top: 98%;
     left: 50%;
     transform: translateX(-50%);
     width: 0; 
