@@ -39,18 +39,22 @@ body {
   background-color: #031025;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   min-height: 700px;
-  // overflow: hidden;
   position: relative;
 }
 
 .container {
   margin: 0 auto;
   width: auto;
-  max-width: 90%;
+  max-width: 88%;
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  @include desktop {
+    max-width: 87%;
+  }
 }
 
 ul {

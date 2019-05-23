@@ -1,8 +1,14 @@
 .form {
-  width: 90%;
+  width: 90.6%;
+  max-width: 920px;
 
   @include desktop {
-    width: 95%;  
+    width: 91%;
+    max-width: 440px;
+  }
+
+  @include phones {
+    width: 100%;  
   }
 }
 
@@ -14,14 +20,20 @@
   border: 1px solid transparent;
   border-radius: 4px;
   background-color: #1b293c;
-  padding: 0 1.5rem;
+  padding: 0 2.6rem;
   margin-bottom: 2rem;
   color: #7A8F99;
   transition: border-color 0.3s;
   cursor: pointer;
-  height: 5rem;
+  height: 7rem;
 
   @include desktop {
+    height: 3.9rem;
+    margin-bottom: 1.1rem;
+    padding: 0 1.4rem;
+  }
+
+  @include phones {
     height: 4rem;
     padding: 0.75rem 1.5rem;
     margin-bottom: 1rem;
@@ -32,6 +44,11 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  margin-bottom: 1.65rem;
+
+  @include desktop {
+    margin-bottom: 1.1rem;
+  }
 }
 
 .form__row:focus-within {
@@ -42,6 +59,11 @@
 .form__input {
   outline: none;
   color: #fff;
+  font-size: 1.5rem;
+
+  @include desktop {
+    font-size: 0.9rem;
+  }
 }
 
 .form__controlls {
@@ -54,9 +76,9 @@
   justify-content: flex-start;
   border: transparent;
   background: transparent;
-  height: 2.5rem;
+  height: 3.5rem;
   padding: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 2.9rem;
 
   @include desktop {
     height: 2rem;
@@ -75,23 +97,33 @@
 .form__checkbox_fake {
   background: rgba( #F5F8FA, 0.1);
   border-radius: 4px;
-  width: 2.3125rem;
-  height: 2rem;
-  margin-right: 2rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  margin-right: 2.5rem;
   position: relative;
 
   @include desktop {
-    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.9rem;
   }
 }
 
 .form__checkbox-title {
-  @include desktop {
-    font-size: 0.75rem;
-  }
+  font-size: 1.1rem;
+  line-height: 1.5em;
 
-  @include phones {
+  @include desktop {
+    font-size: 0.7rem;
     width: 90%;
+  }
+}
+
+.form__row_big-margin {
+  margin-bottom: 2.5rem;
+
+  @include desktop {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -100,14 +132,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0;
+  height: 6.25rem;
+
+  @include desktop {
+    height: 3.5rem;
+  }
 }
 
 .checkin {
   color: #fff;
+  font-size: 1.7rem;
   font-family: 'Open Sans', sans-serif;
   outline: none;
   width: 100%;
   height: 100%;
+
+  @include desktop {
+    font-size: 1rem;
+  }
 }
 
 .form__check:checked~.form__checkbox_fake::after {
@@ -136,32 +179,40 @@
 
 .form__error{
   position: absolute;
-  left: 11%;
-  top: -67%;
-  padding: 0.8125rem 1.25rem;
+  left: 18.8%;
+  top: -89%;
+  padding: 1.1rem 7.95rem;
   background-color: #E15433;
   z-index: 1;
   color: #ffffff;
   animation: slide-up 0.4s ease;
   animation-direction: reverse;
   border-radius: 4px;
+  font-size: 1.6rem;
+
+  @include desktop {
+    left: 18%;
+    top: -88%;
+    padding: 0.58rem 4rem;
+    font-size: 1rem;
+  }
 
   &::after{
     content: "";
     position: absolute;
-    top: 100%;
+    top: 99%;
     left: 50%;
     transform: translateX(-50%);
     width: 0; 
     height: 0; 
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    
-    border-top: 5px solid #E15433;    
-  }
-
-  @include desktop {
-    top: -88%;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 20px solid #E15433;
+    @include desktop {
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 8px solid #E15433;
+    }
   }
 }
 

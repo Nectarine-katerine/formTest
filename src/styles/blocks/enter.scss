@@ -2,12 +2,13 @@
   border: 1px solid #D8E1E6;
   border-radius: 4px;
   display: flex;
-  padding: 1rem 2rem;
+  padding: 0.6% 1.6%;
 
   @include desktop {
-    padding: 0.5rem 1rem;
+    padding: 0.6% 1.2%;
   }
 }
+
 .enter__button {
   display: block;
   background: transparent;
@@ -23,13 +24,14 @@
 }
 
 .enter__icon {
-  background: url('./img/user.svg') center center no-repeat;
-  height: 2rem;
-  width: 2rem;
-  margin-right: 0.625rem;
+  background: url('./img/user.svg') center center no-repeat /cover;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 1rem;
 
   @include desktop {
     height: 1.5rem;
     width: 1.5rem;
+    margin-right: 0.6rem;
   }
 }

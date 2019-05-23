@@ -1,11 +1,13 @@
 .controlls__text {
-  width: 33%;
+  width: 40%;
+  font-size: 1.1rem;
+  line-height: 1.7em;
 
   @include desktop {
-    font-size: 0.75rem;
-    width: 41%;
+    width: 42%;
+    font-size: 0.7rem;
+    line-height: 1.51em;
   }
-
 
   @include phones {
     width: 50%;
@@ -15,4 +17,8 @@
 .controlls__btns {
   display: flex;
   width: 85%;
+
+  @include desktop {
+    width: 87%;
+  }
 }

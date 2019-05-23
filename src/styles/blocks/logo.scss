@@ -1,5 +1,10 @@
 .logo {
   background-color: #fff;
-  width: 8.75rem;
-  height: 1rem;
+  width: 15.5rem;
+  height: 1.755rem;
+
+  @include desktop {
+    width: 8.7rem;
+    height: 1rem;
+  }
 }
