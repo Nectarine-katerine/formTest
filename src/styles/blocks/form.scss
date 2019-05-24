@@ -207,6 +207,14 @@
     max-width: 21rem;
   }
 
+  @include phones {
+    left: 18%;
+    top: -110%;
+    padding: 0.58rem 2.95rem;
+    font-size: 1rem;
+    max-width: 16rem;
+  }
+
   &::after{
     content: "";
     position: absolute;
