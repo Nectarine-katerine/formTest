@@ -30,6 +30,9 @@
   justify-content: center;
   align-items: center;
   font-size: 1.59rem;
+  animation: slideUp 0.4s ease;
+  animation-direction: reverse;
+
 
   @include desktop {
     font-size: 0.9rem;
@@ -37,6 +40,15 @@
     margin-bottom: 1rem;
     padding: 0 1.5rem;
     line-height: 1.7em;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
   }
 }
 

@@ -176,12 +176,20 @@
   background-color: transparent;
   transition: background-color 5000s ease-in-out 0s;
 }
+.form__error {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
 
-.form__error{
+.form__error_active{
+  width: initial;
+  height: initial;
+  opacity: 1;
   position: absolute;
   left: 18.8%;
   top: -89%;
-  padding: 1.1rem 7.95rem;
+  padding: 1.1rem 1.95rem;
   background-color: #E15433;
   z-index: 1;
   color: #ffffff;
@@ -189,12 +197,14 @@
   animation-direction: reverse;
   border-radius: 4px;
   font-size: 1.6rem;
+  max-width: 29rem;
 
   @include desktop {
     left: 18%;
     top: -88%;
     padding: 0.58rem 2.95rem;
     font-size: 1rem;
+    max-width: 21rem;
   }
 
   &::after{

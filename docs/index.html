@@ -32,9 +32,11 @@
           <div class="form__row">
             <label for="email" class="email-label">Ваш e-mail</label>
             <input type="email" id='email', name='email', placeholder="samplemail@mail.com" class="form__input email" required>
+            <div class="form__error"></div>
           </div>
           <div class="form__row form__row_flex">
             <input type="password" id='password', name='password', placeholder="Придумайте пароль" class="form__input password" required minlength="4">
+            <div class="form__error"></div>
           </div>
           
           <div class="form__row form__row_controlls controlls">
@@ -59,6 +61,7 @@
               <input type="checkbox" name="agreement" id="agreement" class="form__check">
               <div class="form__checkbox_fake"></div>
               <div class="form__checkbox-title">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</div>
+              <div class="form__error"></div>
             </label>
           </div>
           <div class="email__error">
